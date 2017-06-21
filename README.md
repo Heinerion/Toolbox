@@ -9,3 +9,5 @@
 ## General
 
 [regular expressions](./regex.md)
+
+[JavaScript](./JavaScript.md)
