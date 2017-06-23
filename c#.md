@@ -2,7 +2,7 @@
 
 ## Entity Framework
 
-Eagerly load properties
+### Load properties eargerly
 
 ```c#
 using System.Data.Entity;
@@ -14,4 +14,29 @@ return context
       .Include(x => x.listProperty.Select(item => item.anotherReference))
       .Where(/* ... */)
       .ToList();
+```
+
+### Use a transaction
+
+```c#
+using (EntityFrameworkContext context = new EntityFrameworkContext())
+{
+    using (DbContextTransaction dbContextTransaction = context.Database.BeginTransaction())
+    {
+        try
+        {
+            /* Operations on context which may throw exceptions */
+
+            context.SaveChanges();
+
+            dbContextTransaction.Commit();
+        }
+        catch (Exception e)
+        {
+            dbContextTransaction.Rollback();
+
+            /* Handle Exception or rethrow */
+        }
+    }
+}
 ```
