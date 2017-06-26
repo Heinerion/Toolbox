@@ -40,3 +40,28 @@ using (EntityFrameworkContext context = new EntityFrameworkContext())
     }
 }
 ```
+or as convenience method:
+```c#
+private void wrapInTransaction(Action databaseAccess)
+{
+    using (DbContextTransaction dbContextTransaction = context.Database.BeginTransaction())
+    {
+        try
+        {
+            databaseAccess();
+
+            dbContextTransaction.Commit();
+        }
+        catch
+        {
+            dbContextTransaction.Rollback();
+            throw;
+        }
+    }
+}
+
+/* ... */
+
+wrapInTransaction(() => failableDatabaseStuff());
+
+```
