@@ -65,3 +65,25 @@ private void wrapInTransaction(Action databaseAccess)
 wrapInTransaction(() => failableDatabaseStuff());
 
 ```
+
+## ASP.NET
+
+### transformed webconfig HTTP rewrite rule
+
+as stated by https://stackoverflow.com/a/20249885/3535608, tailored for my needs
+
+```xml
+<system.webServer>
+  <rewrite xdt:Transform="Insert">
+    <rules>
+      <rule name="http to https" stopProcessing="true">
+        <match url="(.*)" />
+        <conditions>
+          <add input="{HTTPS}" pattern="^OFF$" />
+        </conditions>
+        <action type="Redirect" url="https://{HTTP_HOST}/{R:1}" />
+      </rule>
+    </rules>
+  </rewrite>
+</system.webServer>
+```
