@@ -1,5 +1,16 @@
 # C#
 
+## General
+
+### Parse DateTime form String regardless of Culture
+
+```c#
+private static DateTime parseExact(String dateString)
+{
+    return DateTime.ParseExact(dateString, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+}
+```
+
 ## Entity Framework
 
 ### Load properties eargerly
