@@ -81,7 +81,7 @@ wrapInTransaction(() => failableDatabaseStuff());
 
 ### transformed webconfig HTTP rewrite rule
 
-as stated by https://stackoverflow.com/a/20249885/3535608, tailored for my needs
+as stated by [StuartQ on Stack Overflow](https://stackoverflow.com/a/20249885/3535608), tailored for my needs
 
 ```xml
 <system.webServer>
