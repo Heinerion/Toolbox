@@ -1,16 +1,16 @@
-# Toolbox
+# Operating Systems
 
 ## Windows
 
-[Windows command line tools](./Win%20CMD.md)
+[Windows command line tools](./win_cmd.md)
 
 [MS SQL Server](./MsSqlServer.md)
 
-## General
+# General
 
 [regular expressions](./regex.md)
 
-## Programming languages & their frameworks
+# Programming languages & their frameworks
 
 [JavaScript](./JavaScript.md)
 
