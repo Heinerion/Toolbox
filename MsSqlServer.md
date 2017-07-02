@@ -21,3 +21,5 @@ The DatabaseVersion translates to (according to https://en.wikipedia.org/wiki/Hi
 |782|12|0 |SQL Server 2014|
 |852|13|0 |SQL Server 2016|
 |?|14|0 |SQL Server 2017|
+
+: MS SQL Database versions
