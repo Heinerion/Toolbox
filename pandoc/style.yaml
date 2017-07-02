@@ -1,0 +1,10 @@
+---
+lang: en
+papersize: a4
+documentclass: scrreprt
+numbersections: true
+urlcolor: blue
+toc: true
+lot: true
+lof: false
+...
