@@ -2,8 +2,34 @@
 lang: en
 papersize: a4
 documentclass: scrreprt
+classoption:
+- toc=listof
+- footnotes=multiple
+- parskip=half
+- numbers=noendperiod
+geometry:
+- a4paper
+- left=20mm
+- right=20mm
+- top=20mm
+- bottom=35mm
+header-includes:
+- \usepackage[titles]{tocloft}
+- \usepackage{varioref}
+- \usepackage{url}
+- \usepackage{chngcntr}
+- \usepackage[automark, headsepline, ilines]{scrpage2}
+- \frenchspacing
+- \clubpenalty = 10000
+- \widowpenalty = 10000
+- \displaywidowpenalty = 10000
+- \counterwithout{footnote}{section}
+- \setcounter{tocdepth}{\subsubsectionlevel}
+- \setcounter{secnumdepth}{\subsubsectionlevel}
 numbersections: true
-urlcolor: blue
+links-as-notes: true
+toccolor: black
+linkcolor: blue
 toc: true
 lot: true
 lof: false
