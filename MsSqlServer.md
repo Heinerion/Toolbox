@@ -10,7 +10,7 @@ Interesting fields in result:
 
     DatabaseVersion, SoftwareVersionMajor, SoftwareVersionMinor, SoftwareVersionBuild
 
-The DatabaseVersion translates to (according to https://en.wikipedia.org/wiki/History_of_Microsoft_SQL_Server)
+The DatabaseVersion translates to (according to [Wikipedia](https://en.wikipedia.org/wiki/History_of_Microsoft_SQL_Server))
 
 |DatabaseVersion|Major|Minor|Name|
 |---------------|----|----|----|
