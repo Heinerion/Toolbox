@@ -26,7 +26,7 @@ The DatabaseVersion translates to (according to [Wikipedia](https://en.wikipedia
 
 ## Move Database-Files
 
-Copied from [Mike Fal](https://dba.stackexchange.com/a/52010) and [Dewi Rees Comment](https://dba.stackexchange.com/questions/52007/how-do-i-move-sql-server-database-files#comment191126_52010)
+Copied from [Mike Fal](https://dba.stackexchange.com/a/52010) and [Dewi Rees' Comment](https://dba.stackexchange.com/questions/52007/how-do-i-move-sql-server-database-files#comment191126_52010)
 
 1. Copy Files to new Destination
 2. Run these Scripts
