@@ -41,3 +41,11 @@ MODIFY FILE (name='DATABASE_LOG_FILE_NAME', filename='D:\<destination for log>')
 ```
 3. Put the database offline, then online again.
 4. You may delete the old files now
+
+## Delete all rows in a table (in large tables)
+
+[Documentation](https://docs.microsoft.com/en-us/sql/t-sql/statements/truncate-table-transact-sql)
+
+```SQL
+TRUNCATE TABLE <table>
+```
