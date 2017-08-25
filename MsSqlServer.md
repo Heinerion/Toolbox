@@ -49,3 +49,9 @@ MODIFY FILE (name='DATABASE_LOG_FILE_NAME', filename='D:\<destination for log>')
 ```SQL
 TRUNCATE TABLE <table>
 ```
+
+## Create DateTime from German format
+
+```SQL
+CONVERT(datetime, '25.12.2017', 104)
+```
